@@ -1,7 +1,7 @@
 
 package com.slin.auth.twitterauth.server;
 
-@Configuration
+//@Configuration
 public class AuthorizacionServerConfiguration {
 
 }
