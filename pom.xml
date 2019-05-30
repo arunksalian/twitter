@@ -1,40 +1,43 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.slin.twitter</groupId>
-    <artifactId>Twitter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <packaging>pom</packaging>
-    <name>Twitter Parent</name>
-    <url>http://maven.apache.org</url>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.slin.twitter</groupId>
+	<artifactId>Twitter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Twitter Parent</name>
+	<url>http://maven.apache.org</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>3.8.1</junit.version>
-        <spring.version>5.1.7.RELEASE</spring.version>
-        <spring.boot.version>2.1.5.RELEASE</spring.boot.version>
-        <spring.oauth2.version>2.1.2.RELEASE</spring.oauth2.version>
-        <spring.security-test.version>4.0.0.RELEASE</spring.security-test.version>
-        <spring.security.version>5.1.4.RELEASE</spring.security.version>
-    </properties>
-    <modules>
-        <module>account</module>
-        <module>twitter-auth</module>
-    </modules>
-     <dependencies>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit.version>3.8.1</junit.version>
+		<spring.version>5.1.7.RELEASE</spring.version>
+		<spring.boot.version>2.1.5.RELEASE</spring.boot.version>
+		<spring.oauth2.version>2.1.2.RELEASE</spring.oauth2.version>
+		<spring.security-test.version>4.0.0.RELEASE
+		</spring.security-test.version>
+		<spring.security.version>5.1.4.RELEASE</spring.security.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<modules>
+		<module>account</module>
+		<module>twitter-auth</module>
+	</modules>
+	<dependencies>
 
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
 
-    </dependencies>
+	</dependencies>
 </project>
